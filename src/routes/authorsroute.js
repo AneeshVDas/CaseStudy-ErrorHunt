@@ -34,7 +34,7 @@ authorsRouter.post('/add', function (req, res) {
 
     var item={
         title:req.body.title,
-        image:req.body.images,
+        image:req.body.image, //8. I am a form on one of the EJS pages. When I send data, the backend always misses one. Silly spelling Error ?
         about:req.body.about
     }
     console.log(item)  ;
@@ -111,10 +111,5 @@ authorsRouter.post('/update', function (req, res) {
 
     })  
 })
-
-
-
-
-
 
 module.exports = authorsRouter;
