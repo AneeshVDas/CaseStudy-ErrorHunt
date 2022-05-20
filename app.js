@@ -1,6 +1,7 @@
 const express = require('express'); 
 const path = require ('path'); 
 const cors = require('cors');
+const PORT = process.env.PORT || 5000
 //2. I am a third-party module that is installed and has an important role. I will prevent your application from running. The entire part of myself is missing.
 const bodyParser = require('body-parser')
 
@@ -59,6 +60,6 @@ app.get('/',function(req,res){
     res.render('index',{});
 });
 //1. You can find me if you look at the starting point. message port should be 5000(it was 3000)
-app.listen(5000,()=>{
-    console.log("Server Ready on 5000");
+app.listen(PORT,()=>{
+    console.log(`Server Ready on ${PORT}`);
 });
