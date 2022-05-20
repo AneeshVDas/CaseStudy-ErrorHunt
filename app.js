@@ -11,19 +11,19 @@ const bodyParser = require('body-parser')
 const nav= [
     {
         link:"/authors",
-        title:"Authors"
+        title:"Authors List"
     },
     {
         link:"/books",
-        title:"Books"
+        title:"Books List"
     },
     {
         link:"/books/addbook",
-        title:"Add Book"
+        title:"Add Book New"
     },
     {
         link:"/authors/addauthor",
-        title:"Add Author"
+        title:"Add Author New"
     }
 ]
 
